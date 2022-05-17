@@ -7,10 +7,9 @@
   <summary>How dose it work?</summary>
   <br/>
   
+  + Ref: https://docs.oracle.com/cd/E50612_01/doc.11122/oauth_guide/content/oauth_flows.html
   
-
 </details>
-
 <details>
   <summary>What is the purpose of authorization code in OAuth</summary>
   <br/>
