@@ -32,4 +32,34 @@
 
 ## SSL/TLS
 ## JWT
-### Encrypting vs. Signing. What’s the difference?
+### How does it work?
+
+<details>
+  <summary>Overview</summary>
+  <br/>
+  
+  
+  
+  + Ref: https://cryptobook.nakov.com/digital-signatures
+  
+</details>
+
+### Encryption vs Signing. What’s the difference?
+<details>
+  <summary>Encryption</summary>
+  <br/>
+  
+  
+  
+  + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
+  
+</details>
+<details>
+  <summary>Signing</summary>
+  <br/>
+  
+  
+  
+  + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
+  
+</details>
