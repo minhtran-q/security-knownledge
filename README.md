@@ -43,6 +43,16 @@
   + Ref: https://cryptobook.nakov.com/digital-signatures
   
 </details>
+<details>
+  <summary>Explanation</summary>
+  <br/>
+  
+  ![](images/how_signing_work.png)
+  
+  + Ref: https://cryptobook.nakov.com/digital-signatures
+  + Ref: https://stackoverflow.com/questions/18257185/how-does-a-public-key-verify-a-signature
+  
+</details>
 
 ### Encryption vs Signing. What’s the difference?
 <details>
