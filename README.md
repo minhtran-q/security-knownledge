@@ -38,7 +38,7 @@
   <summary>Overview</summary>
   <br/>
   
-  
+  ![](images/signing_overview.png)
   
   + Ref: https://cryptobook.nakov.com/digital-signatures
   
