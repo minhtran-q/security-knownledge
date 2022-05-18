@@ -32,3 +32,4 @@
 
 ## SSL/TLS
 ## JWT
+### Encrypting vs. Signing. What’s the Difference?
