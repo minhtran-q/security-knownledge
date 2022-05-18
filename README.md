@@ -32,7 +32,10 @@
 
 ## SSL/TLS
 ## JWT
+### What is JSON Web Token?
+
 ### How does it work?
+JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for securely transmitting information between parties as a JSON object. 
 
 <details>
   <summary>Overview</summary>
