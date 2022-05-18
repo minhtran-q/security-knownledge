@@ -49,6 +49,15 @@
   
   ![](images/how_signing_work.png)
   
+  Typically the input message is **hashed** and then the **signature** is calculated by the signing algorithm. Most signature algorithms calculate with the message hash + the signing key (**private key**)
+  ```
+  signMsg(msg, privKey) 🡒 signature
+  ```
+  Message signatures are verified by the corresponding verification key (**public key**). Typically the signed message is **hashed** and calculated with the signature algorithm using the message hash + the public key
+  ```
+  verifyMsgSignature(msg, signature, pubKey) 🡒 valid / invalid
+  ```
+  
   + Ref: https://cryptobook.nakov.com/digital-signatures
   + Ref: https://stackoverflow.com/questions/18257185/how-does-a-public-key-verify-a-signature
   
