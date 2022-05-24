@@ -81,13 +81,25 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   + Ref: https://cryptobook.nakov.com/digital-signatures
   
 </details>
+<details>
+  <summary>JWT in Client-Server</summary>
+  <br/>
+  
+  ![](images/client-server-jwt.png)
+  
+</details>
+<details>
+  <summary>Why not have the public key in the JWT payload for convenience?</summary>
+  <br/>
+  
+  + Ref: https://www.google.com/search?q=dich&rlz=1C1GCEU_enVN945VN945&oq=dich&aqs=chrome.0.69i59j0i512j0i131i433i512j0i3j0i131i433i512j69i60l3.534j0j7&sourceid=chrome&ie=UTF-8
+  
+</details>
 
 ### Encryption vs Signing. What’s the difference?
 <details>
   <summary>Encryption</summary>
   <br/>
-  
-  
   
   + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
   
@@ -95,8 +107,6 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
 <details>
   <summary>Signing</summary>
   <br/>
-  
-  
   
   + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
   
