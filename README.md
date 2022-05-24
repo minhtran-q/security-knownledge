@@ -56,7 +56,11 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   ```
   signMsg(msg, privKey) 🡒 signature
   ```
-  Message signatures are verified by the corresponding verification key (**public key**). Typically the signed message is **hashed** and calculated with the signature algorithm using the message hash + the public key
+  Message signatures are verified by the corresponding verification key (**public key**). So, to validate a digital signature, the recipient
+
+  + Calculates a hash of the same data (file, message, etc.),
+  + Decrypts the digital signature using the sender's PUBLIC key, and
+  + Compares the 2 hash values.
   ```
   verifyMsgSignature(msg, signature, pubKey) 🡒 valid / invalid
   ```
