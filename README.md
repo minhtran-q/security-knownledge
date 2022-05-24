@@ -82,13 +82,6 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   
 </details>
 <details>
-  <summary>JWT in Client-Server</summary>
-  <br/>
-  
-  ![](images/client-server-jwt.png)
-  
-</details>
-<details>
   <summary>Why not have the public key in the JWT payload for convenience?</summary>
   <br/>
   
