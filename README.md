@@ -56,6 +56,9 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   ```
   signMsg(msg, privKey) 🡒 signature
   ```
+  
+  ![](images/jwt_signing.png)
+  
   Message signatures are verified by the corresponding verification key (**public key**). So, to validate a digital signature, the recipient
 
   + Calculates a hash of the same data (file, message, etc.),
@@ -67,6 +70,15 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   
   + Ref: https://cryptobook.nakov.com/digital-signatures
   + Ref: https://stackoverflow.com/questions/18257185/how-does-a-public-key-verify-a-signature
+  
+</details>
+<details>
+  <summary>JWT in Client-Server</summary>
+  <br/>
+  
+  ![](images/client-server-jwt.png)
+  
+  + Ref: https://cryptobook.nakov.com/digital-signatures
   
 </details>
 
