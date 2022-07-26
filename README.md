@@ -10,6 +10,7 @@
   ![](images/oauth_web_server_flow.png)
   
   + Ref: https://docs.oracle.com/cd/E50612_01/doc.11122/oauth_guide/content/oauth_flows.html
+  + Ref: https://portswigger.net/web-security/oauth/grant-types
   
 </details>
 <details>
