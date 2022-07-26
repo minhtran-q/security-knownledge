@@ -32,6 +32,16 @@
 ### Client credential
 ### Resource owner password credential
 ### Implicit
+### OAuth 2.0 Grant Types With Their Use Cases
+
+<details>
+  <summary>Explain</summary>
+  <br/>
+
+  
+  + Ref: https://www.intelegencia.com/blog/technology/oauth-2-0-grant-types-with-their-use-cases#:~:text=The%20best%20use%20case%20for,the%20app's%20credential%20get%20validated.
+  
+</details>
 
 ## SSL/TLS
 ## JWT
