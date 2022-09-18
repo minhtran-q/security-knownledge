@@ -14,12 +14,12 @@
   
 </details>
 <details>
-  <summary>What is the purpose of authorization code in OAuth</summary>
+  <summary>What is the purpose of authorization code in OAuth?</summary>
   <br/>
   
   It's possible to do it with a single request - it's called the _**implicit flow**_ then.
   
-  The general idea of using access code (authorization flow) instead of directly returning the tokens is to **hide** them from the end user. The second request is done usually by the backend server instead of a browser.
+  The general idea of using access code (authorization flow) instead of directly returning the _**tokens**_ and _**client secrect**_ is to **hide** them from the end user. The second request is done usually by the backend server instead of a browser.
   
   This exchange of _authorization code_ doesn't involve the user’s browser so there is no way access tokens are stored in history of the browser.
 
