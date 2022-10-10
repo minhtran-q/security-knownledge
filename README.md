@@ -14,6 +14,82 @@
   
 </details>
 <details>
+  <summary>Detail flow</summary>
+  <br/>
+  
+  1. Redirect the user to the authorization endpoint with the following parameters:
+  
+  | Parameter  | Description |
+  | ------------- | ------------- |
+  | response_type  | Required. Must be set to code.  |
+  | client_id  | Required. The Client ID generated when the application was registered in Identity Server  |
+  | redirect_uri  | Where the authorization code will be sent. This value must match one of the values provided in Identity Server  |
+  | scope  | Optional. A space delimited list of scopes, which indicate the access to the Resource Owner's data being requested by the application.  |
+  | state  | Optional. Any state the consumer wants reflected back to it after approval during the callback.  |
+  
+  ```
+  https://apigateway/oauth/authorize?client_id=SampleConfidentialApp&
+  response_type=code&&redirect_uri=http%3A%2F%2Flocalhost%3A8090%2Fauth%2Fredirect.html&
+  scope=https%3A%2F%2Flocalhost%3A8090%2Fauth%2Fuserinfo.email
+  ```
+  _URL example_
+  
+  2. The response to the above request is sent to the redirect_uri. If the user approves the access request, the response contains an authorization code and the state parameter (if included in the request). If the user does not approve the request, the response contains an error message. All responses are returned to the Web server on the query string. For example:
+
+`https://localhost/oauth_callback&code=9srN6sqmjrvG5bWvNB42PCGju0TFVV`
+
+  3. After the Web server receives the authorization code, it may exchange the authorization code for an access token and a refresh token. This request is an **HTTPS POST**
+  
+  | Parameter  | Description |
+  | ------------- | ------------- |
+  | grant_type  | Required. Must be set to authorization_code. |
+  | code  | Required. The authorization code received in the redirect above. |
+  | redirect_uri  | Required. The redirect URL registered for the application (back-end client).  |
+  | client_id*  | Optional. The client_id obtained during application registration. |
+  | client_secret*  | Optional. The client_secret obtained during application registration. |
+  
+  _* If the client_id and client_secret are not provided as parameters in the HTTP POST, they must be provided in the HTTP Basic Authentication header (Authorization base64Encoded(client_id:client_secret))._
+  
+  ```
+  POST /api/oauth/token HTTP/1.1 
+  Content-Type: application/x-www-form-urlencoded 
+
+  client_id=SampleConfidentialApp&client_secret=6808d4b6-ef09-4b0d-8f28-3b05da9c48ec
+   &code=9srN6sqmjrvG5bWvNB42PCGju0TFVV&redirect_uri=http%3A%2F%2Flocalhost%3A809
+   0%2Fauth%2Fredirect.html&grant_type=authorization_code&format=query
+  ```
+  4. After the request is verified, the Authentication Server sends a response to the client.
+  
+  | Parameter  | Description |
+  | ------------- | ------------- |
+  | access_token  | The token that can be sent to the Resource Server to access the protected resources of the Resource Owner (user). |
+  | refresh_token  | A token that may be used to obtain a new access token. |
+  | expires  | The remaining lifetime on the access token.  |
+  | type  | Indicates the type of token returned. At this time, this field always has a value of **Bearer**. |
+  
+  ```
+  HTTP/1.1 200 OK
+  Cache-Control: no-store
+  Content-Type: application/json
+  Pragma: no-cache{
+      "access_token": “O91G451HZ0V83opz6udiSEjchPynd2Ss9......",
+      "token_type": "Bearer",
+      "expires_in": "3600",
+  }
+  ```
+  
+  5. After the Web server has obtained an access token, it can gain access to protected resources on the Resource Server by placing it in an Authorization: Bearer HTTP header
+  
+  ```
+  GET /oauth/protected HTTP/1.1
+  Authorization: Bearer O91G451HZ0V83opz6udiSEjchPynd2Ss9
+  Host: apigateway.com
+  ```
+  or in curl
+  
+  `curl -H "Authorization: Bearer O91G451HZ0V83opz6udiSEjchPynd2Ss9" https://apigateway.com/oauth/protected`
+</details>
+<details>
   <summary>What is the purpose of authorization code in OAuth?</summary>
   <br/>
   
