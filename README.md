@@ -119,6 +119,8 @@
   
 </details>
 
+## Oauth2
+
 ## SSL/TLS
 ## JWT
 ### What is JSON Web Token?
