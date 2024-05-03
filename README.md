@@ -120,6 +120,7 @@
 </details>
 
 ## OpenId Connect
+### OpenId Connect vs Oauth2
 
 ## SSL/TLS
 ## JWT
