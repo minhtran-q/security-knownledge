@@ -119,7 +119,7 @@
   
 </details>
 
-## Oauth2
+## OpenId Connect
 
 ## SSL/TLS
 ## JWT
