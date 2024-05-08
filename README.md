@@ -131,6 +131,11 @@
   **OpenID Connect:** This is an identity layer that sits on top of the OAuth2 protocol by adding mechanisms for user authentication. It uses OAuth 2.0 flows (like the Authorization Code Flow) to obtain tokens but defines additional features like ID Token, Discovery, Standardized Scopes.
   
 </details>
+<details>
+  <summary>Access token vs Id Token</summary>
+  <br/>
+  
+</details>
 
 ## SSL/TLS
 ## JWT
