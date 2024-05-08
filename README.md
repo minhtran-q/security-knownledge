@@ -127,6 +127,8 @@
   <br/>
   
   **OAuth2:** This is a standardized set of rules that defines how applications can access resources on a server on behalf of a user. It focuses on authorization and token management.
+
+  **OpenID Connect:** This is an identity layer that sits on top of the OAuth2 protocol by adding mechanisms for user authentication. It uses OAuth 2.0 flows (like the Authorization Code Flow) to obtain tokens but defines additional features like ID Token, Discovery, Standardized Scopes.
   
 </details>
 
