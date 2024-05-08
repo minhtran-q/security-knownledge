@@ -122,6 +122,14 @@
 ## OpenId Connect
 ### OpenId Connect vs Oauth2
 
+<details>
+  <summary>Brief defination about OpenID Connect and OAuth2</summary>
+  <br/>
+  
+  **OAuth2:** This is a standardized set of rules that defines how applications can access resources on a server on behalf of a user. It focuses on authorization and token management.
+  
+</details>
+
 ## SSL/TLS
 ## JWT
 ### What is JSON Web Token?
