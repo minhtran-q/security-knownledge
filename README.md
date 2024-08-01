@@ -213,3 +213,25 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
 </details>
 
 ## REST
+
+REST (representational state transfer) is a software architectural style that was created to guide the design and development 
+
+<details>
+  <summary>What is a Stateless REST API?</summary>
+  <br/>
+
+   Stateless REST APIs do not establish or maintain client sessions. Clients are responsible for providing all necessary information in each request, such as authentication tokens, credentials, or context data. The server does not store client-specific session data.
+  
+  
+</details>
+
+<details>
+  <summary>The Six Guiding Principles of REST</summary>
+  <br/>
+
+  Client/Server - Client are separated from servers by a well-defined interface
+  
+  
+</details>
+
+
