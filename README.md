@@ -222,15 +222,14 @@ REST (representational state transfer) is a software architectural style that wa
 
    Stateless REST APIs do not establish or maintain client sessions. Clients are responsible for providing all necessary information in each request, such as authentication tokens, credentials, or context data. The server does not store client-specific session data.
   
-  
 </details>
 
 <details>
   <summary>The Six Guiding Principles of REST</summary>
   <br/>
 
-  Client/Server - Client are separated from servers by a well-defined interface
-  
+  Client/Server - Client are separated from servers by a well-defined interface.
+  Stateless - each request from the client to the server must contain all of the information necessary to establish and complete a request.
   
 </details>
 
