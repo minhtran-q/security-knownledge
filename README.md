@@ -211,3 +211,5 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
   
 </details>
+
+## REST
