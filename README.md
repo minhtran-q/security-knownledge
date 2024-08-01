@@ -228,8 +228,8 @@ REST (representational state transfer) is a software architectural style that wa
   <summary>The Six Guiding Principles of REST</summary>
   <br/>
 
-  Client/Server - Client are separated from servers by a well-defined interface.
-  Stateless - each request from the client to the server must contain all of the information necessary to establish and complete a request.
+  + Client/Server - Client are separated from servers by a well-defined interface.
+  + Stateless - each request from the client to the server must contain all of the information necessary to establish and complete a request.
   
 </details>
 
