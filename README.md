@@ -214,6 +214,7 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
 
 ## REST
 
+### What is REST
 REST (representational state transfer) is a software architectural style that was created to guide the design and development 
 
 <details>
@@ -236,5 +237,7 @@ REST (representational state transfer) is a software architectural style that wa
   + Code on Demand (optional) - 
   
 </details>
+
+### Difference between PUT and POST
 
 
