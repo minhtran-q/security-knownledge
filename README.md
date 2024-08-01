@@ -230,9 +230,9 @@ REST (representational state transfer) is a software architectural style that wa
 
   + Client/Server - Client are separated from servers by a well-defined interface.
   + Stateless - each request from the client to the server must contain all of the information necessary to establish and complete a request.
-  + Cacheability -
+  + Cacheability - 
   + Layered System -
-  + Uniform Interface -
+  + Uniform Interface - The uniform interface includes using standard HTTP verbs (GET, POST, PUT, DELETE, etc.), standard HTTP error responses, and resource identification through URI.
   + Code on Demand (optional) -
   
 </details>
