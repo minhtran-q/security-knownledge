@@ -233,7 +233,7 @@ REST (representational state transfer) is a software architectural style that wa
   + Cacheability - 
   + Layered System -
   + Uniform Interface - The uniform interface includes using standard HTTP verbs (GET, POST, PUT, DELETE, etc.), standard HTTP error responses, and resource identification through URI.
-  + Code on Demand (optional) -
+  + Code on Demand (optional) - 
   
 </details>
 
