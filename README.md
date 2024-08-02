@@ -240,4 +240,31 @@ REST (representational state transfer) is a software architectural style that wa
 
 ### Difference between PUT and POST
 
+<details>
+  <summary>Difference between boths</summary>
+  <br/>
+
+| PUT           | POST          |
+| ------------------------------------------------------- | ----------------------------------------------------------------- |
+| Updates or replaces an existing resource on the server. | Updates or replaces an existing resource on the server.           |
+| Idempotent: Multiple identical requests produce the same result.  | Idempotent: Multiple identical requests produce the same result.  |
+| Content Cell  | Idempotent: Multiple identical requests produce the same result.  |
+  
+</details>
+
+<details>
+  <summary>Example</summary>
+  <br/>
+
+```
+GET 	/device-management/devices       : Get all devices
+POST 	/device-management/devices       : Create a new device
+
+GET 	/device-management/devices/{id}   : Get the device information identified by "id"
+PUT 	/device-management/devices/{id}   : Update the device information identified by "id"
+DELETE	/device-management/devices/{id}   : Delete device by "id"
+```
+
+</details>
+
 
