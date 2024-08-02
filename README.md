@@ -245,11 +245,13 @@ REST (representational state transfer) is a software architectural style that wa
   <br/>
 
 | PUT           | POST          |
-| ----------------------------------------------------------------- | -----------------------------------------------------------------       |
-| Updates or replaces an existing resource on the server.           | Updates or replaces an existing resource on the server.                 |
-| Idempotent: Multiple identical requests produce the same result.  | Idempotent: Multiple identical requests may produce different results.  |
-| | |
-  
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------  |
+| Updates or replaces an existing resource on the server.                                       | Updates or replaces an existing resource on the server.                 |
+| Idempotent: repeating the same request returns the same result.                               | Idempotent: repeating the same request may produce different results.   |
+| The request body contains the entire updated resource.                                        | The request body contains data for creating the new resource.           |
+| If the existing resource does not exist, a new one will be created.                           | Often used to create new resources.                                     |
+| If an existing resource exists, it will be completely replaced with the contents of the body. | An empty request body may still be valid                                |
+
 </details>
 
 <details>
