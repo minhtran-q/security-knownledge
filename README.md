@@ -248,7 +248,7 @@ REST (representational state transfer) is a software architectural style that wa
 | ------------------------------------------------------- | ----------------------------------------------------------------- |
 | Updates or replaces an existing resource on the server. | Updates or replaces an existing resource on the server.           |
 | Idempotent: Multiple identical requests produce the same result.  | Idempotent: Multiple identical requests produce the same result.  |
-| Content Cell  | Idempotent: Multiple identical requests produce the same result.  |
+| | |
   
 </details>
 
