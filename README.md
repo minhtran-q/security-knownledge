@@ -251,7 +251,7 @@ The details differences are as follows:
 | Request Body:        | The PUT body contains the full updated data for the resource.               | POST body only includes data for the new resource.                                 |
 | URI Meaning:         | PUT uses the URI to directly identify the resource to update (e.g. user 1). | POST uses the URI to specify the collection where a new resource will be created.  |
 | Idempotency:         | PUT is idempotent - the same request gives the same result.                 | POST can produce different results each time.                                      |
-| Existing Resources:  | If the existing resource does not exist, a new one will be created.         | Often used to create new resources.                                                |
+| Existing Resources:  | PUT replaces the entire resource with the request body.                     | POST partially updates the resource. (should use PATH)                             |
 | New Resources:       | Both PUT and POST can create new resources.                                 | Both PUT and POST can create new resources.                                        |
 
 _Example:_
@@ -294,4 +294,11 @@ DELETE	/device-management/devices/{id}   : Delete device by "id"
 
 </details>
 
+### Additional Methods
+<details>
+  <summary>Additional HTTP Method</summary>
+  <br/>
 
+
+
+</details>
