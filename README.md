@@ -244,13 +244,15 @@ REST (representational state transfer) is a software architectural style that wa
   <summary>Difference between boths</summary>
   <br/>
 
-| PUT           | POST          |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------  |
-| Updates or replaces an existing resource on the server.                                       | Updates or replaces an existing resource on the server.                 |
-| Idempotent: repeating the same request returns the same result.                               | Idempotent: repeating the same request may produce different results.   |
-| The request body contains the entire updated resource.                                        | The request body contains data for creating the new resource.           |
-| If the existing resource does not exist, a new one will be created.                           | Often used to create new resources.                                     |
-| If an existing resource exists, it will be completely replaced with the contents of the body. | An empty request body may still be valid                                |
+  The details differences are as follows:
+
+|| PUT           | POST          |
+| -------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Request Body:        | The PUT body contains the full updated data for the resource.               | POST body only includes data for the new resource.                                 |
+| URI Meaning:         | PUT uses the URI to directly identify the resource to update (e.g. user 1). | POST uses the URI to specify the collection where a new resource will be created.  |
+| Idempotency:         | PUT is idempotent - the same request gives the same result.                 | POST can produce different results each time.                                      |
+| Existing Resources:  | If the existing resource does not exist, a new one will be created.         | Often used to create new resources.                                                |
+| New Resources:       | Both PUT and POST can create new resources.                                 | Both PUT and POST can create new resources.                                        |
 
 _Example:_
 ```
@@ -263,6 +265,7 @@ PUT /users/1
 }
 // This sends a request to replace user 1's record.
 ```
+PUT is limited to creating or updating operations and exclusively acts upon the resource identified by the provided URL.
 ```
 // POST example
 POST /users  
@@ -272,6 +275,7 @@ POST /users
 }
 // This sends a request to create a new user.
 ```
+POST is more flexible, and capable of executing various types of processing tasks.
 
 </details>
 
