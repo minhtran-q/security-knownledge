@@ -244,7 +244,7 @@ REST (representational state transfer) is a software architectural style that wa
   <summary>Difference between boths</summary>
   <br/>
 
-  The details differences are as follows:
+The details differences are as follows:
 
 || PUT           | POST          |
 | -------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
