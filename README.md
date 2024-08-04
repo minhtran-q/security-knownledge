@@ -252,10 +252,31 @@ REST (representational state transfer) is a software architectural style that wa
 | If the existing resource does not exist, a new one will be created.                           | Often used to create new resources.                                     |
 | If an existing resource exists, it will be completely replaced with the contents of the body. | An empty request body may still be valid                                |
 
+_Example:_
+```
+// PUT example  
+PUT /users/1
+{
+  "id": 1,
+  "name": "Ichiro",
+  "age": 22
+}
+// This sends a request to replace user 1's record.
+```
+```
+// POST example
+POST /users  
+{
+  "name": "Saburo",
+  "age": 18
+}
+// This sends a request to create a new user.
+```
+
 </details>
 
 <details>
-  <summary>Example</summary>
+  <summary>HTTP method exmaples</summary>
   <br/>
 
 ```
