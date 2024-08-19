@@ -235,3 +235,13 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
 
   _Note:_ Different subdomains are considered different origins (e.g., `www.example.com` and `blog.example.com`).
 </details>
+<details>
+  <summary>Without Same Origin Policy</summary>
+  <br/>
+  Imagine you are logged into your online banking site (https://bank.com). At the same time, you visit another website (http://malicious.com). Without the same-origin policy, it could run a script to access your banking information directly from your browser session.
+  
+  1. You log into https://bank.com.
+  2. You visit http://malicious.com.
+  3. The malicious site runs a script that tries to access your session cookies or other sensitive data from https://bank.com.
+  4. The script successfully reads your banking information and sends it to the attacker.
+</details>
