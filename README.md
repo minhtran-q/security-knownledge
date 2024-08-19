@@ -213,3 +213,15 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
 </details>
 
 ### CORS
+
+<details>
+  <summary>Same Origin Policy</summary>
+  <br/>
+  
+  Two URLs are considered to have the same origin if they share the following three components:
+
+  + Protocol: The communication method used (e.g., http, https).
+  + Domain: The domain name (e.g., example.com).
+  + Port: The port number (if specified).
+  
+</details>
