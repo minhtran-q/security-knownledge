@@ -245,3 +245,9 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   3. The malicious site runs a script that tries to access your session cookies or other sensitive data from https://bank.com.
   4. The script successfully reads your banking information and sends it to the attacker.
 </details>
+
+<details>
+  <summary>Cross-Origin Resource Sharing (CORS)</summary>
+  <br/>
+  
+</details>
