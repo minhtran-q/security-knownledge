@@ -257,6 +257,13 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   <br/>
   
   In browser terminology, the current browser URL is called the _current origin_ and the third-party URL is _cross-origin_.
+
+  When you make a cross-origin request, for example:
   
+  Consider a site called `https://news.example.com`. This _site_ wants to access resources from an API at `partner-api.com`. If developers at `https://partner-api.com` configure the cross-origin resource sharing (CORS) headers on their server by adding `new.example.com` to the allowed origins list. 
+
+  _`Access-Control-Allow-Origin: https://news.example.com`_
+
+  Once **CORS** access is configured, `news.example.com` can request resources from `partner-api.com`. For every request, `partner-api.com` will respond with `Access-Control-Allow-Credentials:"true"`. The browser then knows the communication is authorized and permits cross-origin access.
 </details>
 
