@@ -255,7 +255,7 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
 <details>
   <summary>How does cross-origin resource sharing work?</summary>
   <br/>
-  
+  In browser terminology, the current browser URL is called the _current origin_ and the third-party URL is _cross-origin_.
   
 </details>
 
