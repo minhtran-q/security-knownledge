@@ -223,5 +223,14 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   + Protocol: The communication method used (e.g., http, https).
   + Domain: The domain name (e.g., example.com).
   + Port: The port number (if specified).
+
+  Same Origin:
+  + `http://www.example.com/path1` and `http://www.example.com/path2`
+  + `https://example.com:8080/foo` and `https://example.com:8080/bar`
+  
+  Different Origin:
+  + `http://www.example.com` and `https://www.example.com` (different protocol)
+  + `http://www.example.com` and `http://www.anothersite.com` (different domain)
+  + `http://www.example.com:80` and `http://www.example.com:8080` (different port)
   
 </details>
