@@ -249,5 +249,7 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
 <details>
   <summary>Cross-Origin Resource Sharing (CORS)</summary>
   <br/>
+
+  Cross-origin resource sharing (CORS) is an extension of the same-origin policy. You need CORS when you want to pull data from external APIs that are public or authorized. You also need CORS if you want to allow authorized third-party access to your own server resources.
   
 </details>
