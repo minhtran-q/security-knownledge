@@ -265,5 +265,7 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   _`Access-Control-Allow-Origin: https://news.example.com`_
 
   Once **CORS** access is configured, `news.example.com` can request resources from `partner-api.com`. For every request, `partner-api.com` will respond with `Access-Control-Allow-Credentials:"true"`. The browser then knows the communication is authorized and permits cross-origin access.
+
+  When a web application attempts a cross-origin request, the browser evaluates the request based on the criteria for simple requests. If the request meets these criteria, it's sent directly without a preflight. Otherwise, the browser determines that a _**preflight**_ is necessary.
 </details>
 
