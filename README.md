@@ -212,7 +212,7 @@ JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for sec
   
 </details>
 
-### CORS
+## CORS
 
 <details>
   <summary>Same Origin Policy</summary>
