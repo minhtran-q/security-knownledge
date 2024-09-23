@@ -195,13 +195,6 @@
   
 </details>
 <details>
-  <summary>Why not have the public key in the JWT payload for convenience?</summary>
-  <br/>
-  
-  + Ref: https://www.google.com/search?q=dich&rlz=1C1GCEU_enVN945VN945&oq=dich&aqs=chrome.0.69i59j0i512j0i131i433i512j0i3j0i131i433i512j69i60l3.534j0j7&sourceid=chrome&ie=UTF-8
-  
-</details>
-<details>
   <summary>Sign & Verify in JWT</summary>
   <br/>
   
@@ -228,7 +221,7 @@
   
 </details>
 
-### Encryption vs Signing. What’s the difference?
+### Other questions
 <details>
   <summary>Private & public key</summary>
   <br/>
@@ -244,6 +237,13 @@
   
   + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
   + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
+</details>
+<details>
+  <summary>Why not have the public key in the JWT payload for convenience?</summary>
+  <br/>
+  
+  + Ref: https://www.google.com/search?q=dich&rlz=1C1GCEU_enVN945VN945&oq=dich&aqs=chrome.0.69i59j0i512j0i131i433i512j0i3j0i131i433i512j69i60l3.534j0j7&sourceid=chrome&ie=UTF-8
+  
 </details>
 
 ## CORS
