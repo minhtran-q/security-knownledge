@@ -182,7 +182,7 @@
   ![](images/jwt_structure.png)
 </details>
 <details>
-  <summary>JWT Flow</summary>
+  <summary>JWT flow in Client-Server model</summary>
   <br/>
   
   ![](images/client-server-jwt.png)
@@ -199,15 +199,22 @@
 <details>
   <summary>Signing & Verification in JWT</summary>
   <br/>
-  
+
   ![](images/how_signing_work.png)
-  
-  Typically the input message is **hashed** and then the **signature** is calculated by the signing algorithm. Most signature algorithms calculate with the message hash + the signing key (**private key**)
-  ```
-  signMsg(msg, privKey) 🡒 signature
-  ```
-  
+
+  **Signing:**
+
   ![](images/jwt_signing.png)
+
+  To create the signature (Signing), you need: _the encoded header_, _the encoded payload_, _a secret key_ (**private key**). Then the signature is created by using the specified algorithm and the secret key.
+  ```
+  HMACSHA256(
+    base64UrlEncode(header) + "." + base64UrlEncode(payload),
+    secret ()
+  )
+  ```
+  
+  **Verification:**
   
   Message signatures are verified by the corresponding verification key (**public key**). So, to validate a digital signature, the recipient
 
