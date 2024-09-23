@@ -239,18 +239,11 @@
   
 </details>
 <details>
-  <summary>Encryption</summary>
+  <summary>Encryption vs Signing</summary>
   <br/>
   
   + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
-  
-</details>
-<details>
-  <summary>Signing</summary>
-  <br/>
-  
   + Ref: https://www.encryptionconsulting.com/education-center/encryption-and-signing/#:~:text=Encryption%20uses%20a%20key%20to,of%20encryption%20in%20its%20process.
-  
 </details>
 
 ## CORS
