@@ -139,10 +139,51 @@
 
 ## SSL/TLS
 ## JWT
-### What is JSON Web Token?
+### Fundamental concepts
+<details>
+  <summary>What is JWT</summary>
+  <br/>
 
-### How does it work?
-JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for securely transmitting information between parties as a JSON object. 
+  JSON Web Token (JWT) is an open standard _(RFC 7519)_ that defines a way for securely transmitting information between parties as a JSON object. 
+
+  **Structure of JWT:**
+
+  + Header: This part typically consists of two elements
+    + The type of the token, which is JWT.
+    + The signing algorithm being used, such as HMAC SHA256 or RSA.
+  ```
+  {
+    "alg": "HS256",
+    "typ": "JWT"
+  }
+  ```
+
+  + Payload: This part contains the claims. Claims are statements about an entity (typically, the user) and additional data. There are three types of claims:
+    + Registered claims: Predefined claims like `iss` (issuer), `exp` (expiration time), `sub` (subject), and `aud` (audience).
+    + Public claims: Custom claims that can be defined by users.
+    + Private claims: Custom claims that are shared between parties that agree on using them.
+  ```
+  {
+    "sub": "1234567890",
+    "name": "John Doe",
+    "admin": true
+  }
+  ```
+
+  + Signature: This part is used to verify that the sender of the JWT is who it says it is and to ensure that the message wasn’t changed along the way.
+  ```
+  HMACSHA256(
+    base64UrlEncode(header) + "." +
+    base64UrlEncode(payload),
+    secret
+  )
+  ```
+  
+  ![](images/signing_overview.png)
+  
+  + Ref: https://cryptobook.nakov.com/digital-signatures
+  
+</details>
 
 <details>
   <summary>Overview</summary>
