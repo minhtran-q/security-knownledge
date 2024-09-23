@@ -159,9 +159,9 @@
   ```
 
   + **Payload:** This part contains the claims. Claims are statements about an entity (typically, the user) and additional data. There are three types of claims:
-    + Registered claims: Predefined claims like `iss` (issuer), `exp` (expiration time), `sub` (subject), and `aud` (audience).
-    + Public claims: Custom claims that can be defined by users.
-    + Private claims: Custom claims that are shared between parties that agree on using them.
+    + **Registered claims:** Predefined claims like `iss` (issuer), `exp` (expiration time), `sub` (subject), and `aud` (audience).
+    + **Public claims:** Custom claims that can be defined by users.
+    + **Private claims:** Custom claims that are shared between parties that agree on using them.
   ```
   {
     "sub": "1234567890",
@@ -178,6 +178,8 @@
     secret
   )
   ```
+
+  ![](images/jwt_structure.png)
 </details>
 <details>
   <summary>JWT Flow</summary>
