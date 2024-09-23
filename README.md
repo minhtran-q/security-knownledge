@@ -180,7 +180,29 @@
   ```
 </details>
 <details>
-  <summary>Explanation</summary>
+  <summary>JWT Flow</summary>
+  <br/>
+  
+  ![](images/client-server-jwt.png)
+
+  1. User Authentication: The user logs in with their credentials (e.g., username and password). Then the server verifies the credentials.
+  2. Token Creation: The JWT is signed using a secret key or a public/private key pair.
+  3. Token Transmission: The server sends the JWT back to the client (usually in the response body or as a cookie). Then the client stores the JWT, often in local storage or a cookie.
+  4. Subsequent Requests: The client includes the JWT in the HTTP headers (usually in the Authorization header with the Bearer schema)
+  5. Token Verification: The server verifies the JWT by checking its signature and ensuring it has not expired. If the token is valid, the server processes the request and sends the appropriate response.
+  
+  + Ref: https://cryptobook.nakov.com/digital-signatures
+  
+</details>
+<details>
+  <summary>Why not have the public key in the JWT payload for convenience?</summary>
+  <br/>
+  
+  + Ref: https://www.google.com/search?q=dich&rlz=1C1GCEU_enVN945VN945&oq=dich&aqs=chrome.0.69i59j0i512j0i131i433i512j0i3j0i131i433i512j69i60l3.534j0j7&sourceid=chrome&ie=UTF-8
+  
+</details>
+<details>
+  <summary>Sign & Verify in JWT</summary>
   <br/>
   
   ![](images/how_signing_work.png)
@@ -203,28 +225,6 @@
   
   + Ref: https://cryptobook.nakov.com/digital-signatures
   + Ref: https://stackoverflow.com/questions/18257185/how-does-a-public-key-verify-a-signature
-  
-</details>
-<details>
-  <summary>JWT Flow</summary>
-  <br/>
-  
-  ![](images/client-server-jwt.png)
-
-  1. User Authentication: The user logs in with their credentials (e.g., username and password). Then the server verifies the credentials.
-  2. Token Creation: The JWT is signed using a secret key or a public/private key pair.
-  3. Token Transmission: The server sends the JWT back to the client (usually in the response body or as a cookie). Then the client stores the JWT, often in local storage or a cookie.
-  4. Subsequent Requests: The client includes the JWT in the HTTP headers (usually in the Authorization header with the Bearer schema)
-  5. Token Verification: The server verifies the JWT by checking its signature and ensuring it has not expired. If the token is valid, the server processes the request and sends the appropriate response.
-  
-  + Ref: https://cryptobook.nakov.com/digital-signatures
-  
-</details>
-<details>
-  <summary>Why not have the public key in the JWT payload for convenience?</summary>
-  <br/>
-  
-  + Ref: https://www.google.com/search?q=dich&rlz=1C1GCEU_enVN945VN945&oq=dich&aqs=chrome.0.69i59j0i512j0i131i433i512j0i3j0i131i433i512j69i60l3.534j0j7&sourceid=chrome&ie=UTF-8
   
 </details>
 
