@@ -178,21 +178,6 @@
     secret
   )
   ```
-  
-  ![](images/signing_overview.png)
-  
-  + Ref: https://cryptobook.nakov.com/digital-signatures
-  
-</details>
-
-<details>
-  <summary>Overview</summary>
-  <br/>
-  
-  ![](images/signing_overview.png)
-  
-  + Ref: https://cryptobook.nakov.com/digital-signatures
-  
 </details>
 <details>
   <summary>Explanation</summary>
@@ -238,6 +223,15 @@
 </details>
 
 ### Encryption vs Signing. What’s the difference?
+<details>
+  <summary>Private & public key</summary>
+  <br/>
+  
+  ![](images/signing_overview.png)
+  
+  + Ref: https://cryptobook.nakov.com/digital-signatures
+  
+</details>
 <details>
   <summary>Encryption</summary>
   <br/>
