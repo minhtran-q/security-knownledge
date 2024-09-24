@@ -170,7 +170,7 @@
   }
   ```
 
-  + **Signature:** This part is used to verify that the sender of the JWT is who it says it is and to ensure that the message wasn’t changed along the way.
+  + **Signature:** This part is used to verify that the sender of the JWT to ensure the message wasn’t changed.
   ```
   HMACSHA256(
     base64UrlEncode(header) + "." +
@@ -218,18 +218,17 @@
   
   **Verification:**
   
-  Message signatures are verified by the corresponding verification key (**public key**). So, to validate a digital signature, the recipient
+  The first step is to decode these parts. Then use the same algorithm specified in the header and the public key (_asymmetric keys_) to recreate the signature. Finally, compare the recreated signature with the one in the JWT. If they match, the token is valid.
 
-  + Calculates a hash of the same data (file, message, etc.),
-  + Decrypts the digital signature using the sender's PUBLIC key, and
-  + Compares the 2 hash values.
-  ```
-  verifyMsgSignature(msg, signature, pubKey) 🡒 valid / invalid
-  ```
+  JWTs contain claims in the payload, such as the issuer (iss), expiration time (exp), and audience (aud). You should verify these claims to ensure:
+
+  + **Expiration (exp):** The token is not expired.
+  + **Issuer (iss):** The token was issued by a trusted authority.
+  + **Audience (aud):** The token is intended for your application.
+
   
   + Ref: https://cryptobook.nakov.com/digital-signatures
   + Ref: https://stackoverflow.com/questions/18257185/how-does-a-public-key-verify-a-signature
-  
 </details>
 
 ### Detail about Signing & Verification
