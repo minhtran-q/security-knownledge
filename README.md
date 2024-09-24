@@ -200,6 +200,8 @@
   <summary>Signing & Verification in JWT</summary>
   <br/>
 
+  **Overview:**
+
   ![](images/how_signing_work.png)
 
   **Signing:**
@@ -230,10 +232,14 @@
   
 </details>
 
-### Other questions
+### Detail about Signing & Verification
 <details>
   <summary>Private & public key</summary>
   <br/>
+
+  **Private key:** The private key is used to sign the JWT. This means that when a JWT is created, the issuer uses their private key to generate a digital signature based on the token’s header and payload.
+
+  **Public Key:** The public key is used to verify the JWT’s signature. When a recipient receives a JWT, they use the issuer’s public key to verify that the token’s signature.
   
   ![](images/signing_overview.png)
   
@@ -252,6 +258,19 @@
   <br/>
   
   + Ref: https://www.google.com/search?q=dich&rlz=1C1GCEU_enVN945VN945&oq=dich&aqs=chrome.0.69i59j0i512j0i131i433i512j0i3j0i131i433i512j69i60l3.534j0j7&sourceid=chrome&ie=UTF-8
+  
+</details>
+<details>
+  <summary>Secret Key vs Private/Public Key Pair</summary>
+  <br/>
+
+  **Secret Key (Symmetric Key)**
+  + The same secret key is used for both signing and verifying the JWT. This means that anyone with the secret key can create and verify tokens.
+  + Often used in single-server applications or where the token verification happens within the same trusted environment.
+
+  **Private/Public Key Pair (Asymmetric Keys)**
+  + Ideal for distributed systems where different entities issue and verify tokens.
+  + The private key is used to sign the JWT, and the public key is used to verify it. This ensures that only the issuer with the private key can create valid tokens, while anyone with the public key can verify them.
   
 </details>
 
