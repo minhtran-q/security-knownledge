@@ -132,9 +132,35 @@
   
 </details>
 <details>
+  <summary>OpenId connect flow</summary>
+  <br/>
+
+  + User Initiates Login: The user clicks on a login button in your application.
+  + Redirect to Authorization Server: The application redirects the user to the OpenID Provider (OP) with a request that includes the client ID, redirect URI, response type (code), and scope.
+  + User Authenticates: The user logs in and consents to the requested permissions.
+  + Authorization Code: The OP redirects the user back to the application with an authorization code in the query string.
+  + Exchange Code for Tokens: The application sends a request to the OP’s token endpoint, including the authorization code, client ID, client secret, and redirect URI.
+  + ID Token and Access Token: The OP validates the authorization code and returns an ID token and an access token.
+  + Verify ID Token: The application verifies the ID token to ensure it is valid and issued by the OP.
+  + Access Protected Resources: The application uses the access token to make API requests to access protected resources on behalf of the user.
+  + UserInfo Endpoint: Optionally, the application can request additional user information from the UserInfo endpoint using the access token.
+  
+</details>
+<details>
   <summary>Access token vs Id Token</summary>
   <br/>
+
+  The differences between an ID Token and an Access Token:
+
+  _ID Token_
+  + **Purpose:** Used to authenticate the user.
+  + **Content:** Contains information about the user and the authentication event, such as the user’s identity, the issuer, and the expiration time.
+  + **Format:** Typically a JSON Web Token (JWT).
   
+  _Access Token_
+  + **Purpose:** Used to authorize access to protected resources.
+  + **Content:** Contains information needed to access resources, such as scopes and permissions.
+  + **Format:** Can be a JWT or an string.
 </details>
 
 ## SSL/TLS
