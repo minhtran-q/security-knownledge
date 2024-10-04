@@ -16,10 +16,6 @@
 <details>
   <summary>Detail flow</summary>
   <br/>
-
-  _Summary:_
-
-  
   
   1. Redirect the user to the authorization endpoint with the following parameters:
   
