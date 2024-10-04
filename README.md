@@ -16,6 +16,10 @@
 <details>
   <summary>Detail flow</summary>
   <br/>
+
+  _Summary:_
+
+  
   
   1. Redirect the user to the authorization endpoint with the following parameters:
   
@@ -120,6 +124,23 @@
 </details>
 
 ## OpenId Connect
+
+<details>
+  <summary>OpenId connect flow</summary>
+  <br/>
+
+  + **User Initiates Login:** The user clicks on a login button in your application.
+  + **Redirect to Authorization Server:** The application redirects the user to the OpenID Provider (OP) with a request that includes the client ID, redirect URI, response type (code), and scope.
+  + **User Authenticates:** The user logs in and consents to the requested permissions.
+  + **Authorization Code:** The OP redirects the user back to the application with an authorization code in the query string.
+  + **Exchange Code for Tokens:** The application sends a request to the OP’s token endpoint, including the authorization code, client ID, client secret, and redirect URI.
+  + **ID Token and Access Token:** The OP validates the authorization code and returns an ID token and an access token.
+  + **Verify ID Token:** The application verifies the ID token to ensure it is valid and issued by the OP.
+  + **Access Protected Resources:** The application uses the access token to make API requests to access protected resources on behalf of the user.
+  + **UserInfo Endpoint:** Optionally, the application can request additional user information from the UserInfo endpoint using the access token.
+  
+</details>
+
 ### OpenId Connect vs Oauth2
 
 <details>
@@ -129,21 +150,6 @@
   **OAuth2:** This is a standardized set of rules that defines how applications can access resources on a server on behalf of a user. It focuses on authorization and token management.
 
   **OpenID Connect:** This is an identity layer that sits on top of the OAuth2 protocol by adding mechanisms for user authentication. It uses OAuth 2.0 flows (like the Authorization Code Flow) to obtain tokens but defines additional features like ID Token, Discovery, Standardized Scopes.
-  
-</details>
-<details>
-  <summary>OpenId connect flow</summary>
-  <br/>
-
-  + User Initiates Login: The user clicks on a login button in your application.
-  + Redirect to Authorization Server: The application redirects the user to the OpenID Provider (OP) with a request that includes the client ID, redirect URI, response type (code), and scope.
-  + User Authenticates: The user logs in and consents to the requested permissions.
-  + Authorization Code: The OP redirects the user back to the application with an authorization code in the query string.
-  + Exchange Code for Tokens: The application sends a request to the OP’s token endpoint, including the authorization code, client ID, client secret, and redirect URI.
-  + ID Token and Access Token: The OP validates the authorization code and returns an ID token and an access token.
-  + Verify ID Token: The application verifies the ID token to ensure it is valid and issued by the OP.
-  + Access Protected Resources: The application uses the access token to make API requests to access protected resources on behalf of the user.
-  + UserInfo Endpoint: Optionally, the application can request additional user information from the UserInfo endpoint using the access token.
   
 </details>
 <details>
