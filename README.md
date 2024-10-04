@@ -144,13 +144,19 @@
 ### OpenId Connect vs Oauth2
 
 <details>
-  <summary>Brief defination about OpenID Connect and OAuth2</summary>
+  <summary>OpenID Connect and OAuth2</summary>
   <br/>
-  
-  **OAuth2:** This is a standardized set of rules that defines how applications can access resources on a server on behalf of a user. It focuses on authorization and token management.
 
-  **OpenID Connect:** This is an identity layer that sits on top of the OAuth2 protocol by adding mechanisms for user authentication. It uses OAuth 2.0 flows (like the Authorization Code Flow) to obtain tokens but defines additional features like ID Token, Discovery, Standardized Scopes.
-  
+  **OAuth2:**
+
+  + **Purpose:** OAuth 2.0 is primarily for authorization, allowing applications to access resources of the user.
+  + **Tokens:** OAuth 2.0 issues an access token.
+
+  **OpenID Connect:**
+
+  + **Purpose:** OpenID Connect is built on top of OAuth 2.0 and adds authentication, allowing applications to verify the user’s identity.
+  + **Tokens:** OpenID Connect issues both an access token and an ID token.
+
 </details>
 <details>
   <summary>Access token vs Id Token</summary>
