@@ -26,6 +26,15 @@
   **Access Protected Resources:** The application uses the access token to make API requests to access protected resources on behalf of the user.
 </details>
 <details>
+  <summary>Refresh token flow</summary>
+  <br/>
+
+  + **Access Token Expiry:** When the access token expires, the client uses the refresh token to request a new access token.
+  + **Token Endpoint Request:** The client sends a POST request to the token endpoint with the following parameters: `grant_type` (_`refresh_token`_), `refresh_token`, `client_id`, `client_secret`.
+  + **New Tokens Issued:** The authorization server validates the refresh token and issues a new access token.
+  + **Access Protected Resources:** The client uses the new access token to access protected resources.
+</details>
+<details>
   <summary>Detail flow</summary>
   <br/>
   
