@@ -200,6 +200,10 @@
   **Usage**
 
   To call the UserInfo endpoint, we need an access token. This token is used to authorize the request to the UserInfo endpoint.
+
+  **Content in ID token & UserInfo endpoint:**
+  + The ID token contains claims about the authentication event and some basic user information.
+  + The UserInfo endpoint can provide more detailed and extensive user profile information.
   
 </details>
 
@@ -229,7 +233,7 @@
 
 </details>
 <details>
-  <summary>Access token vs Id Token</summary>
+  <summary>Access token vs ID Token</summary>
   <br/>
 
   The differences between an ID Token and an Access Token:
