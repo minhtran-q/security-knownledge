@@ -162,6 +162,14 @@
 
 </details>
 <details>
+  <summary>Authorization Server and OpenID Provider</summary>
+  <br/>
+
+  + **Authorization Server:** This is a component responsible for authenticating the user, obtaining their consent, and issuing tokens (access tokens, refresh tokens, etc.).
+  + **OpenID Provider (OP):** the OP is an extension of the _authorization server_. It not only handles the OAuth 2.0 tasks but also provides additional functionality for user authentication and identity management. 
+
+</details>
+<details>
   <summary>Access token vs Id Token</summary>
   <br/>
 
