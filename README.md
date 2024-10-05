@@ -190,6 +190,16 @@
 <details>
   <summary>UserInfo endpoint</summary>
   <br/>
+
+  The UserInfo endpoint is a part of the OpenID Connect standard. It is used to retrieve claims about the authenticated user, such as their name, email, and other profile information. The UserInfo endpoint provides additional information about the user.
+
+  **Location:**
+
+  The URL for the UserInfo endpoint is provided by the OpenID Provider and can be found in the configuration document. Usually located at the `.well-known/openid-configuration` endpoint of the identity provider.
+
+  **Usage**
+
+  To call the UserInfo endpoint, we need an access token. This token is used to authorize the request to the UserInfo endpoint.
   
 </details>
 
