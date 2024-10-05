@@ -31,7 +31,7 @@
 
   + **Access Token Expiry:** When the access token expires, the client uses the refresh token to request a new access token.
   + **Token Endpoint Request:** The client sends a POST request to the token endpoint with the following parameters: `grant_type` (_`refresh_token`_), `refresh_token`, `client_id`, `client_secret`.
-  + **New Tokens Issued:** The authorization server validates the refresh token and issues a new access token.
+  + **New Tokens Issued:** The authorization server validates the refresh token and issues a **_new access token_**.
   + **Access Protected Resources:** The client uses the new access token to access protected resources.
 </details>
 <details>
