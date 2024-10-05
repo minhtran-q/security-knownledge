@@ -141,6 +141,11 @@
   + **Verify ID Token:** The application verifies the ID token to ensure it is valid and issued by the OP.
   + **Access Protected Resources:** The application uses the access token to make API requests to access protected resources on behalf of the user.
   + **UserInfo Endpoint:** Optionally, the application can request additional user information from the UserInfo endpoint using the access token.
+</details>
+
+<details>
+  <summary>UserInfo endpoint</summary>
+  <br/>
   
 </details>
 
