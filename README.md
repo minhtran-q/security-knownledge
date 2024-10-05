@@ -158,11 +158,6 @@
   + **UserInfo Endpoint:** Optionally, the application can request additional user information from the UserInfo endpoint using the access token.
 </details>
 <details>
-  <summary>UserInfo endpoint</summary>
-  <br/>
-  
-</details>
-<details>
   <summary>Refresh token flow</summary>
   <br/>
 
@@ -170,6 +165,31 @@
   + **Token Endpoint Request:** The client sends a POST request to the token endpoint with the following parameters: `grant_type` (_`refresh_token`_), `refresh_token`, `client_id`, `client_secret`.
   + **New Tokens Issued:** The authorization server validates the refresh token and issues a **_new access token_**, **_ID token_**.
   + **Access Protected Resources:** The client uses the new access token to access protected resources and the new ID token to verify the user’s identity.
+</details>
+<details>
+  <summary>ID token structure</summary>
+  <br/>
+  
+  An ID token is a JSON Web Token (JWT) that contains information about the authenticated user. It has three main parts: the header, payload, and signature.
+
+  **Header:**
+  + `alg`: The signing algorithm used, such as RS256.
+  + `typ`: The type of token, which is JWT.
+
+  **Payload:** The payload contains claims about the user and the authentication event. Some standard claims include:
+  + `iss`: Issuer (the identity provider).
+  + `sub`: Subject (the unique identifier for the user).
+  + `aud`: Audience (the client ID of the application).
+  + `exp`: Expiration time.
+  + `iat`: Issued at time.
+  + `name`: Full name of the user.
+  + `email`: Email address of the user.
+  + `picture`: URL of the user’s profile picture.
+
+</details>
+<details>
+  <summary>UserInfo endpoint</summary>
+  <br/>
   
 </details>
 
