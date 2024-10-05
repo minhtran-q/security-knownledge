@@ -215,13 +215,13 @@
 
   **OAuth2:**
 
-  + **Purpose:** OAuth 2.0 is primarily for authorization, allowing applications to access resources of the user.
-  + **Tokens:** OAuth 2.0 issues an access token.
+  + OAuth 2.0 is focused on authorization (granting access to resources). 
+  + OAuth 2.0 uses access tokens to grant access to resources.
 
   **OpenID Connect:**
 
-  + **Purpose:** OpenID Connect is built on top of OAuth 2.0 and adds authentication, allowing applications to verify the user’s identity.
-  + **Tokens:** OpenID Connect issues both an access token and an ID token.
+  + OpenID Connect is focused on authentication (verifying user identity) and builds on OAuth 2.0 to provide this functionality.
+  + OpenID Connect uses ID tokens to provide identity information about the user.
 
 </details>
 <details>
