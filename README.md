@@ -17,13 +17,13 @@
   <summary>Summary flow</summary>
   <br/>
 
-  **User Initiates Login:** The user clicks on a login button in your application.
-  **Redirect to Authorization Server:** The application redirects the user to the Authorization Server with a request that includes the `client ID`, `redirect URI`, `response type` (code), and `scope`.
-  **User Authenticates:** The user logs in and consents to the requested permissions.
-  **Authorization Code:** The Authorization Server redirects the user back to the application with an authorization code in the query string.
-  **Exchange Code for Tokens:** The application sends a request to the Authorization Server’s token endpoint, including the authorization code, `client ID`, `client secret`, and `redirect URI`.
-  **Access Token (and optionally Refresh Token):** The Authorization Server validates the authorization code and returns an access token (and optionally a refresh token).
-  **Access Protected Resources:** The application uses the access token to make API requests to access protected resources on behalf of the user.
+  + **User Initiates Login:** The user clicks on a login button in your application.
+  + **Redirect to Authorization Server:** The application redirects the user to the Authorization Server with a request that includes the `client ID`, `redirect URI`, `response type` (code), and `scope`.
+  + **User Authenticates:** The user logs in and consents to the requested permissions.
+  + **Authorization Code:** The Authorization Server redirects the user back to the application with an authorization code in the query string.
+  + **Exchange Code for Tokens:** The application sends a request to the Authorization Server’s token endpoint, including the authorization code, `client ID`, `client secret`, and `redirect URI`.
+  + **Access Token (and optionally Refresh Token):** The Authorization Server validates the authorization code and returns an access token (and optionally a refresh token).
+  + **Access Protected Resources:** The application uses the access token to make API requests to access protected resources on behalf of the user.
 </details>
 <details>
   <summary>Refresh token flow</summary>
