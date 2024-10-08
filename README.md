@@ -1,6 +1,16 @@
 # Security Knownledge
 ## Oauth2
 
+### Terminogoly
+
+<details>
+  <summary>Token Introspection</summary>
+  <br/>
+
+  
+
+</details>
+
 ### Authorization code
 
 <details>
