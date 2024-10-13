@@ -452,3 +452,6 @@
   When a web application attempts a cross-origin request, the browser evaluates the request based on the criteria for simple requests. If the request meets these criteria, it's sent directly without a preflight. Otherwise, the browser determines that a _**preflight**_ is necessary.
 </details>
 
+## Vault
+
+### Vault with Spring boot 
