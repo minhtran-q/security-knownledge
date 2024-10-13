@@ -459,6 +459,10 @@
 <details>
   <summary>Features of Vault</summary>
   <br/>
+
+  + **Data Encryption:** Vault provides encryption as a service, allowing you to encrypt and decrypt data without storing it.
+  + **Secure Secret Storage:** Vault can store arbitrary key-value secrets, such as API keys, passwords, and certificates.
+  + **High Availability (HA):** Vault supports high availability configurations to ensure that your Vault deployment remains operational event.
   
 </details>
 <details>
@@ -475,7 +479,6 @@
 
   + When Vault starts, it performs a leader election process to determine which node will be the active node. If the active node becomes unavailable, one of the standby nodes is automatically promoted to the active role.
   + Standby nodes can forward requests to the active node. This ensures that clients can still interact with Vault even if they connect to a standby node.
-  
 </details>
 
 ### Integrate with Spring boot
