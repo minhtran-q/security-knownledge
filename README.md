@@ -485,5 +485,57 @@
 <details>
   <summary>Setup Vault with Spring boot</summary>
   <br/>
+
+  Configure dependencies
+  ```
+  <dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-vault-config</artifactId>
+  </dependency>
+  <dependency>
+      <groupId>org.springframework.vault</groupId>
+      <artifactId>spring-vault-core</artifactId>
+  </dependency>
+  ```
+
+  Configure Vault in `application.yml`
+
+  ```
+  spring:
+    cloud:
+      vault:
+        uri: http://127.0.0.1:8200
+        token: s.YourVaultToken
+        kv:
+          enabled: true
+          backend: secret
+  ```
+
+  `enabled: true`: This tells Spring Cloud Vault to use the key-value secrets engine.
+  `backend: secret`: This specifies that the secrets are stored under the secret path in Vault. For example, if you store a secret at `secret/myapp`, you can access it in your Spring Boot application.
+
+  **Create a Vault Configuration Class**
+
+  ```
+  @Configuration
+  public class VaultConfig {
   
+      @Bean
+      public VaultTemplate vaultTemplate() {
+          VaultEndpoint endpoint = VaultEndpoint.create("127.0.0.1", 8200);
+          return new VaultTemplate(endpoint, new TokenAuthentication("s.YourVaultToken"));
+      }
+  }
+  ```
+
+  ```
+  @RestController
+  public class SecretController {
+  
+      @Value("${my.secret}")
+      private String secret;
+  
+  }
+  ```
+  `@Value(“${my.secret}”)`: Injects the secret stored in Vault into the secret variable.
 </details>
