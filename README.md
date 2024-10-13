@@ -464,6 +464,17 @@
 <details>
   <summary>HA</summary>
   <br/>
+
+  High Availability (HA) in Vault ensures that your Vault deployment remains operational even if some of the servers fail.
+
+  Vault operates with multiple server nodes:
+  + **Active Node:** This node handles all the client requests and performs the operations.
+  + **Standby Nodes:** These nodes are ready to take over if the active node fails.
+
+   ![](images/HA_vault.png)
+
+  + When Vault starts, it performs a leader election process to determine which node will be the active node. If the active node becomes unavailable, one of the standby nodes is automatically promoted to the active role.
+  + Standby nodes can forward requests to the active node. This ensures that clients can still interact with Vault even if they connect to a standby node.
   
 </details>
 
