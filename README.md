@@ -454,4 +454,22 @@
 
 ## Vault
 
-### Vault with Spring boot 
+### Fundamental concepts
+
+<details>
+  <summary>Features of Vault</summary>
+  <br/>
+  
+</details>
+<details>
+  <summary>HA</summary>
+  <br/>
+  
+</details>
+
+### Integrate with Spring boot
+<details>
+  <summary>Setup Vault with Spring boot</summary>
+  <br/>
+  
+</details>
