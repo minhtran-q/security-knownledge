@@ -511,8 +511,8 @@
           backend: secret
   ```
 
-  `enabled: true`: This tells Spring Cloud Vault to use the key-value secrets engine.
-  `backend: secret`: This specifies that the secrets are stored under the secret path in Vault. For example, if you store a secret at `secret/myapp`, you can access it in your Spring Boot application.
+  + `enabled: true`: This tells Spring Cloud Vault to use the key-value secrets engine.
+  + `backend: secret`: This specifies that the secrets are stored under the secret path in Vault. For example, if you store a secret at `secret/myapp`, you can access it in your Spring Boot application.
 
   **Create a Vault Configuration Class**
 
