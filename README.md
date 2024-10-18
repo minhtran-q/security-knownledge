@@ -259,7 +259,7 @@
   + **Format:** Can be a JWT or an string.
 </details>
 
-## API Gateway with Centralized Authentication and Authorization
+## Authentication and Authorization in Microservices Architecture
 
 
 
