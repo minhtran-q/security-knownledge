@@ -259,7 +259,10 @@
   + **Format:** Can be a JWT or an string.
 </details>
 
-## SSL/TLS
+## API Gateway with Centralized Authentication and Authorization
+
+
+
 ## JWT
 ### Fundamental concepts
 <details>
