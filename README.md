@@ -268,24 +268,6 @@
   <br/>
 
 </details>
-<details>
-  <summary>API Gateway vs Reverse Proxy</summary>
-  <br/>
-
-  | Feature                          | Reverse Proxy                     | API Gateway                         |
-  |-----------------------------------|----------------------------------|-------------------------------------|
-  | **Purpose**                       | Forward traffic to back-end servers | Manage API requests and traffic  |
-  | **Load Balancing**                | Yes                              | Yes (with advanced rules)           |
-  | **Security**                      | Basic (SSL termination, IP filtering) | Advanced (token validation, rate limiting) |
-  | **Authentication**                | Limited                          | Built-in support (OAuth, JWT, etc.) |
-  | **Request Transformation**        | Minimal                          | Yes (e.g., modify headers, paths)   |
-  | **API Versioning**                | No                               | Yes                                 |
-  | **Rate Limiting**                 | No                               | Yes                                 |
-  | **Logging and Analytics**         | Basic (server logs)              | Advanced (usage metrics, analytics) |
-  | **Microservice Support**          | Basic (routes traffic)           | Full support for microservices orchestration |
-  | **Service Orchestration**         | No                               | Yes (can aggregate responses from multiple services) |
-
-</details>
 
 ### Token-Based Authentication with OAuth2 and JWT
 
