@@ -259,18 +259,6 @@
   + **Format:** Can be a JWT or an string.
 </details>
 
-## Authentication and Authorization in Microservices Architecture
-
-### API Gateway
-
-<details>
-  <summary>Authentication with API Gateway</summary>
-  <br/>
-
-</details>
-
-### Token-Based Authentication with OAuth2 and JWT
-
 ## JWT
 ### Fundamental concepts
 <details>
