@@ -285,6 +285,15 @@
 <details>
   <summary>Token Inspect Endpoint vs User Endpoint</summary>
   <br/>
+
+  **Token inspect endpoint:**
+  + Validates the token itself and returns information about it.
+  + Retrieve details on token scope, expiration, and associated user or client permissions.
+  + Information specific to the token, such as: `active`, `exp`, `scope`, `sub`.
+
+  **User endpoint:**
+  + Provides detailed information about the user associated with the authenticated session or token.
+  + Information specific to the user, often including: `id`, `name`, `email`, `roles` or `permissions`, ... .
   
 </details>
 
