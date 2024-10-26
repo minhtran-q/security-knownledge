@@ -7,7 +7,30 @@
   <summary>Token Introspection</summary>
   <br/>
 
-  
+  Token introspection is a mechanism defined in OAuth 2.0 that allows resource servers to query an authorization server to validate and get information about an access token (or refresh token).
+
+  _Example:_
+
+  ```
+  {
+    "active": true,
+    "scope": "read write profile",
+    "client_id": "client123",
+    "username": "johndoe",
+    "token_type": "Bearer",
+    "exp": 1728678400,
+    "iat": 1728674800,
+    "nbf": 1728674800,
+    "sub": "user123",
+    "aud": ["resource_server1", "resource_server2"],
+    "iss": "https://auth.example.com",
+    "jti": "abc123xyz",
+    "custom_claims": {
+      "roles": ["admin", "user"],
+      "organization": "example_org"
+    }
+  }
+  ```
 
 </details>
 
