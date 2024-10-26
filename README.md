@@ -282,6 +282,12 @@
   + **Format:** Can be a JWT or an string.
 </details>
 
+<details>
+  <summary>Token Inspect Endpoint vs User Endpoint</summary>
+  <br/>
+  
+</details>
+
 ## JWT
 ### Fundamental concepts
 <details>
